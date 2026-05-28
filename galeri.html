@@ -1,116 +1,77 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galeri Desa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Desa</title>
 
-  <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <div class="logo">
-        <img src="assets/gambar/logo__web_kelurahan_nobg.jpeg" alt="Logo Desa">
-        <span>Desa Jebugan</span>
-    </div>
+    <div class="container">
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="profil.html">Profil</a></li>
-      <li><a href="galeri.html" class="active">Galeri</a></li>
-      <li><a href="unduhan.html">Unduhan</a></li>
-    </ul>
-  </nav>
+        <h1>Event Desa Jebugan</h1>
 
-  <div class="menu-toggle">&#9776;</div>
-</header>
-
-<section class="page">
-  <div class="container">
-
-    <h1>Galeri Kegiatan</h1>
-
-    <div class="gallery">
-
-      <div class="gallery-card">
-        <img src="assets/gambar/posyandu remaja.jpeg" alt="">
-        <h3>Posyandu</h3>
-      </div>
-
-      <div class="gallery-card">
-        <img src="assets/gambar/IMG_20250824_095649_1.jpg" alt="">
-        <h3>Pawai dan Jalan Sehat</h3>
-      </div>
-
-      <div class="gallery-card">
-        <img src="assets/gambar/rembug stunting1.jpg" alt="">
-        <h3>Rembug Stunting</h3>
-      </div>
-
-      <div class="gallery-card">
-        <img src="assets/gambar/monev dana desa1.jpg" alt="">
-        <h3>Monev Dana Desa</h3>
-      </div>
-
-      <div class="gallery-card">
-        <img src="assets/gambar/pembinaan adm desa1.jpg" alt="">
-        <h3>Pembinaan Administrasi</h3>
-      </div>
-
-      <div class="gallery-card">
-        <img src="assets/gambar/PKUB.jpeg" alt="">
-        <h3>Paguyuban Keamanan dan Ketertiban Umat Beragama (PKUB)</h3>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!--FOOTER-->
-    <footer class="footer">
-
-    <div class="footer-container">
-
-        <!-- Logo dan Nama -->
-        <div class="footer-about">
-            <img src="assets/gambar/logo _web_kelurahan.jpeg" alt="Logo Desa">
-            <h2>Desa Jebugan</h2>
-            <p>Melayani masyarakat dengan informasi dan potensi desa.</p>
+        <!-- BUTTON EVENT -->
+        <div class="button-group">
+            <button onclick="showEvent(1)">Pawai Kemerdekaan</button>
+            <button onclick="showEvent(2)">Jalan Sehat</button>
+            <button onclick="showEvent(3)">Kerja Bakti</button>
+            <button onclick="showEvent(4)">Festival UMKM</button>
+            <button onclick="showEvent(5)">Lomba 17 Agustus</button>
         </div>
 
-        <!-- Sosial Media -->
-        <div class="footer-social">
-            <h3>Navigasi Menu</h3>
-
-            <a href="index.html">HOME</a>
-            <a href="profil.html">PROFIL</a>
-            <a href="galeri.html">GALERI</a>
-            <a href="unduhan.html">UNDUHAN</a>
+        <!-- EVENT 1 -->
+        <div class="event-box" id="event1">
+            <img src="assets/gambar/pawai.jpg" alt="Pawai">
+            <h2>Pawai Kemerdekaan</h2>
+            <p>
+                Kegiatan pawai keliling desa untuk memperingati Hari Kemerdekaan RI.
+            </p>
         </div>
 
-        <!-- Kontak -->
-        <div class="footer-contact">
-            <h3>Kontak</h3>
+        <!-- EVENT 2 -->
+        <div class="event-box" id="event2">
+            <img src="assets/gambar/jalansehat.jpg" alt="Jalan Sehat">
+            <h2>Jalan Sehat</h2>
+            <p>
+                Jalan sehat bersama warga desa dengan hadiah menarik.
+            </p>
+        </div>
 
-            <p>Nama Desa: JEBUGAN</p>
-            <p>Email: desajebugan@gmail.com</p>
-            <p>Telp: 0272-32753</p>
-            <p>Kode Pos: 57433</p>
-            <p>Alamat: Jl, Ki Ageng Menak, Jebugan, Jebugan, Klaten Utara, Klaten, Jawa Tengah</p>
+        <!-- EVENT 3 -->
+        <div class="event-box" id="event3">
+            <img src="assets/gambar/kerjabakti.jpg" alt="Kerja Bakti">
+            <h2>Kerja Bakti</h2>
+            <p>
+                Kegiatan membersihkan lingkungan bersama masyarakat desa.
+            </p>
+        </div>
+
+        <!-- EVENT 4 -->
+        <div class="event-box" id="event4">
+            <img src="assets/gambar/umkm.jpg" alt="Festival UMKM">
+            <h2>Festival UMKM</h2>
+            <p>
+                Pameran produk UMKM lokal Desa Jebugan.
+            </p>
+        </div>
+
+        <!-- EVENT 5 -->
+        <div class="event-box" id="event5">
+            <img src="assets/gambar/lomba.jpg" alt="Lomba">
+            <h2>Lomba 17 Agustus</h2>
+            <p>
+                Berbagai lomba seru untuk anak-anak dan warga desa.
+            </p>
         </div>
 
     </div>
 
-    <div class="footer-bottom">
-        <p>© 2026 Desa Jebugan. All Rights Reserved.</p>
-    </div>
-
-    </footer>
-
-<script src="script.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 
 </body>
 </html>
